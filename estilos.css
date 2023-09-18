@@ -16,7 +16,6 @@ header nav {
 }
 
 header nav .nav-right-section {
-    /* Fix: Removed extra '0' in width */
     width: 250px;
     height: auto;
     display: flex;
@@ -25,15 +24,18 @@ header nav .nav-right-section {
     align-items: center;
 }
 
-/* Fix: Added 'header' before 'nav' */
 header nav .nav-right-section a {
     text-decoration: none;
     margin-right: 25px;
     color: black;
 }
 
-/* Fix: Added 'header' before 'nav' */
-header nav .nav-right-section .menu-icon {
+/*Esto es para subrayar los links Gmail e Imágenes del nav*/
+nav .nav-right-section a:hover {
+    text-decoration: underline;
+}
+
+nav .nav-right-section .menu-icon {
     background-image: url("https://img.icons8.com/ios-glyphs/90/000000/circled-menu.png");
     width: 27px;
     height: 27px;
@@ -42,7 +44,6 @@ header nav .nav-right-section .menu-icon {
     background-repeat: no-repeat;
 }
 
-/* Fix: Added 'header' before 'nav' */
 header nav .nav-right-section img {
     border-radius: 80px;
     margin-left: 15px;
@@ -92,6 +93,62 @@ main .main-input-container:hover {
     box-shadow: 0 1px 6px 0 #20212447;
 }
 
+main .main-input .search-icon {
+    background-image: url('https://img.icons8.com/android/24/000000/search.png');
+    width: 18px;
+    height: 18px;
+    padding-left: 25px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+}
+
+main .main-input .micro-icon {
+    background-image: url('https://upload.wikimedia.org/wikipedia/commons/thumb/e/e8/Google_mic.svg/726px-Google_mic.svg.png');
+    width: 18px;
+    height: 18px;
+    padding-left: 25px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+}
+
+main .main-input .cam-icon {
+    background-image: url('https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQU9EB56qp8B5qgt89OtkGpN86KFafBM7cBixk1nXOs7ukEVbJE');
+    width: 22px;
+    height: 22px;
+    padding-right: 35px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+}
+
+main .main-buttons {
+    width: 530px;
+    margin: 0 auto;
+}
+
+main .main-buttons div {
+    display: inline-block;
+}
+
+main .main-buttons button {
+    height: 36px;
+    background-color: #f8f9fa;
+    border: 0;
+    font-size: 14px;
+    color: #5f6368;
+    border-radius: 6px;
+    padding: 0 15px;
+    margin-right: 12px;
+}
+
+main .main-buttons button:hover {
+    border: 1px solid #c6c6c6;
+    box-shadow: 0 0.5px 1px 0 #000001;
+    cursor: pointer;
+}
+
 footer {
     width: 100%;
     height: 50px;
@@ -100,7 +157,7 @@ footer {
     display: grid;
     grid-template-columns: 1fr 1fr;
     align-items: center;
-    font-size: 13px;
+    font-size: 1px;
     background-color: #f2f2f2;
     border-top: 1px solid #e4e4e4;
 }
